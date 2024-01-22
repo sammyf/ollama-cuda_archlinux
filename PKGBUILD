@@ -4,7 +4,7 @@
 pkgname=ollama-cuda
 pkgdesc='Create, run and share large language models (LLMs) with CUDA'
 pkgver=0.1.21
-pkgrel=2
+pkgrel=3
 arch=(x86_64)
 url='https://github.com/jmorganca/ollama'
 license=(MIT)
@@ -22,9 +22,9 @@ source=(git+$url#commit=$_ollamacommit
         ollama.service)
 b2sums=('SKIP'
         'SKIP'
-        '65d39053cd1dd09562473c2e58f66a447ce0225b32607685f60350596b3288d6568c1cb897393b20236260e632427de1a952e72fe358407020f6cc7820fd4f60'
-        '6f0b6886108e8d5f385bf7f9bebc60218797c53d4b88a69cc98564ad02c558cb86633b4f713ddd919d618146c04ac0a9215aa6c32ae192701af9d7850264dd56' 
-	'be72a39e823d6631095ce407c92af6aee8650302eeaaa55a970a43592daaa141369d3a5a5eb6a992f6c2f5461370228ac7a84f3318422419fd868575454487d6') 
+        '3aabf135c4f18e1ad745ae8800db782b25b15305dfeaaa031b4501408ab7e7d01f66e8ebb5be59fc813cfbff6788d08d2e48dcf24ecc480a40ec9db8dbce9fec'
+        'e8f2b19e2474f30a4f984b45787950012668bf0acb5ad1ebb25cd9776925ab4a6aa927f8131ed53e35b1c71b32c504c700fe5b5145ecd25c7a8284373bb951ed' 
+	'a773bbf16cf5ccc2ee505ad77c3f9275346ddf412be283cfeaee7c2e4c41b8637a31aaff8766ed769524ebddc0c03cf924724452639b62208e578d98b9176124') 
 
 prepare() {
   cd ${pkgname/-cuda}
